@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h2>中国电信上网账号后缀查询</h2>
+<p>最近更新时间：15/3/31</p>
+<hr/>
+<h4>在下面的选框中选择你的账号的归属地。</h4>
+<select onchange="check(this)">
+	<option value=""></option>
+	<option value="zx">全国中心</option>
+	<option value="qg">全国</option>
+	<option value="bj">北京</option>
+	<option value="tj">天津</option>
+	<option value="hl">黑龙江</option>
+	<option value="jl">吉林</option>
+	<option value="ln">辽宁</option>
+	<option value="he">河北</option>
+	<option value="ha">河南</option>
+	<option value="sd">山东</option>
+	<option value="sx">山西</option>
+	<option value="sn">陕西</option>
+	<option value="hb">湖北</option>
+	<option value="hn">湖南</option>
+	<option value="js">江苏</option>
+	<option value="ah">安徽</option>
+	<option value="sh">上海</option>
+	<option value="zj">浙江</option>
+	<option value="fj">福建</option>
+	<option value="jx">江西</option>
+	<option value="gd">广东</option>
+	<option value="hi">海南</option>
+	<option value="am">澳门</option>
+	<option value="gx">广西</option>
+	<option value="gz">贵州</option>
+	<option value="yn">云南</option>
+	<option value="sc">四川</option>
+	<option value="cq">重庆</option>
+	<option value="gs">甘肃</option>
+	<option value="nx">宁夏</option>
+	<option value="qh">青海</option>
+	<option value="nm">内蒙古</option>
+	<option value="xz">西藏</option>
+	<option value="xj">新疆</option>
+</select>
+<p id="ret"></p>
+<script type="text/javascript">
+	function check(sel) {
+		var p = document.getElementById('ret');
+		p.innerHTML = '请尝试 @cw.' + sel.value + '.chntel.com 或 @wlan.' + sel.value + '.chntel.com';
+	}
+</script>
+</body>
+</html>
